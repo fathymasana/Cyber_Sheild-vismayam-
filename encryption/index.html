@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>CyberShield | Encryption Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+
+    <a href="../index.html" class="back">
+      ← Back to CyberShield
+    </a>
+
+    <header>
+      <h1>🔐 Secret Message Encryption</h1>
+      <p>
+        Protect confidential information using
+        AES-GCM encryption.
+      </p>
+    </header>
+
+    <section class="panel">
+      <h2>1. Enter Your Message</h2>
+
+      <textarea id="message"
+        placeholder="Enter a sample secret message..."></textarea>
+
+      <button id="encryptBtn">
+        🔒 Encrypt Message
+      </button>
+    </section>
+
+    <section class="panel">
+      <h2>2. Encryption Result</h2>
+
+      <label>Original Message</label>
+      <div class="output" id="original">---</div>
+
+      <label>Encrypted Message</label>
+      <div class="output" id="encrypted">---</div>
+
+      <label>Secret Key</label>
+      <div class="output" id="secretKey">---</div>
+
+      <button id="copyBtn" disabled>
+        Copy Secret Key
+      </button>
+    </section>
+
+    <section class="panel">
+      <h2>3. Receiver – Decryption</h2>
+
+      <p>Enter the correct secret key to recover the message.</p>
+
+      <input id="receiverKey"
+        type="text"
+        placeholder="Paste secret key here"
+        autocomplete="off"
+        spellcheck="false">
+
+      <button id="decryptBtn" disabled>
+        🔓 Decrypt Message
+      </button>
+
+      <label>Decrypted Message</label>
+      <div class="output" id="decrypted">---</div>
+    </section>
+
+    <p id="status" role="status" aria-live="polite"></p>
+
+    <footer>
+      CyberShield | Cybersecurity Awareness Exhibition
+    </footer>
+
+  </main>
+</body>
+</html>

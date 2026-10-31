@@ -1,0 +1,44 @@
+🛡️ CYBER SHIELD – VISMAYAM
+
+Interactive Cybersecurity Awareness Platform
+
+About the Project
+
+Cyber Shield is an interactive cybersecurity working model developed as part of Vismayam, a college exhibition.
+
+The project aims to create awareness about cybersecurity threats and demonstrate how different security mechanisms work through interactive simulations.
+
+Project Modules
+
+1. Password Strength Checker – Evaluates the strength of sample passwords.
+2. Phishing Detection Simulator – Helps users identify suspicious messages and phishing attempts.
+3. Encryption and Decryption – Demonstrates how information can be securely encoded and decoded.
+4. Firewall Simulator – Demonstrates how network traffic can be monitored and filtered.
+
+Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Python (where applicable)
+
+Project Objectives
+
+- Promote cybersecurity awareness.
+- Demonstrate common cyber threats.
+- Encourage safe digital practices.
+- Provide an interactive learning experience.
+
+Team Collaboration
+
+This repository serves as a common workspace for all project members.
+
+Each member contributes to their assigned module, and all modules will be integrated into a single cybersecurity platform.
+
+Project Status
+
+Under Development 🚀
+
+Disclaimer
+
+This project is developed for educational and cybersecurity awareness purposes only.

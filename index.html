@@ -1,83 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-  <title>CyberShield | Encryption Lab</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield | Security Lab</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <main class="container">
 
-    <a href="../index.html" class="back">
-      ← Back to CyberShield
-    </a>
+<nav class="navbar">
+    <div class="logo">CYBER<span>SHIELD</span></div>
+    <div class="status">● SYSTEM SECURE</div>
+</nav>
 
-    <header>
-      <h1>🔐 Secret Message Encryption</h1>
-      <p>
-        Protect confidential information using
-        AES-GCM encryption.
-      </p>
-    </header>
+<main class="hero">
+    <div class="tag">CYBERSECURITY INTELLIGENCE LAB</div>
 
-    <section class="panel">
-      <h2>1. Enter Your Message</h2>
+    <h1>Welcome to <span>Encryption Lab</span></h1>
 
-      <textarea id="message"
-        placeholder="Enter a sample secret message..."></textarea>
+    <p class="subtitle">
+        Discover how cybersecurity protects messages
+        from unauthorized access.
+    </p>
 
-      <button id="encryptBtn">
-        🔒 Encrypt Message
-      </button>
-    </section>
+    <div class="shield">🛡️</div>
 
-    <section class="panel">
-      <h2>2. Encryption Result</h2>
+    <h2>Mission: Protect the Message</h2>
 
-      <label>Original Message</label>
-      <div class="output" id="original">---</div>
+    <p>
+        Can you transform an ordinary message into
+        protected digital information and recover it
+        using the correct secret key?
+    </p>
 
-      <label>Encrypted Message</label>
-      <div class="output" id="encrypted">---</div>
+    <div class="button-group">
+        <a href="encrypt.html" class="btn primary">
+            🔒 START ENCRYPTION
+        </a>
 
-      <label>Secret Key</label>
-      <div class="output" id="secretKey">---</div>
+        <a href="decrypt.html" class="btn secondary">
+            🔓 OPEN DECRYPTION
+        </a>
+    </div>
 
-      <button id="copyBtn" disabled>
-        Copy Secret Key
-      </button>
-    </section>
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>01</h3>
+            <strong>Encryption</strong>
+            <p>Convert a message into protected data.</p>
+        </div>
 
-    <section class="panel">
-      <h2>3. Receiver – Decryption</h2>
+        <div class="info-card">
+            <h3>02</h3>
+            <strong>Secret Key</strong>
+            <p>A key used to unlock protected information.</p>
+        </div>
 
-      <p>Enter the correct secret key to recover the message.</p>
+        <div class="info-card">
+            <h3>03</h3>
+            <strong>Decryption</strong>
+            <p>Recover the original message.</p>
+        </div>
+    </div>
+</main>
 
-      <input id="receiverKey"
-        type="text"
-        placeholder="Paste secret key here"
-        autocomplete="off"
-        spellcheck="false">
+<footer>
+    © 2026 CYBERSHIELD | Encryption Intelligence Lab
+</footer>
 
-      <button id="decryptBtn" disabled>
-        🔓 Decrypt Message
-      </button>
-
-      <label>Decrypted Message</label>
-      <div class="output" id="decrypted">---</div>
-    </section>
-
-    <p id="status" role="status" aria-live="polite"></p>
-
-    <footer>
-      CyberShield | Cybersecurity Awareness Exhibition
-    </footer>
-
-  </main>
 </body>
 </html>

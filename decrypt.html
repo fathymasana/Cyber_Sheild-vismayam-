@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield | Decrypt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">CYBER<span>SHIELD</span></div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="encrypt.html">Encrypt</a>
+        <a class="active" href="decrypt.html">Decrypt</a>
+    </div>
+    <div class="status">● SYSTEM SECURE</div>
+</nav>
+
+<main class="workspace">
+
+    <div class="tag">MODULE 02 / MESSAGE RECOVERY</div>
+
+    <h1>Decryption <span>Terminal</span></h1>
+
+    <p class="subtitle">
+        Recover the original message using the correct secret key.
+    </p>
+
+    <div class="security-tag">SECURE MESSAGE VERIFICATION</div>
+
+    <section class="panel">
+
+        <div class="notice">
+            Your encrypted message has been transferred
+            automatically from the Encryption Terminal.
+            Enter your secret key to recover it.
+        </div>
+
+        <label for="inputKey">ENTER YOUR SECRET KEY</label>
+
+        <textarea id="inputKey"
+            placeholder="Paste your secret key here..."></textarea>
+
+        <button id="decryptBtn" class="btn primary full">
+            🔓 DECRYPT MESSAGE
+        </button>
+
+        <p id="decryptError" class="error"></p>
+
+        <div id="decryptResult" class="result-area hidden">
+
+            <div class="success-heading">
+                <h2>DECRYPTION SUCCESSFUL</h2>
+                <span>✓ MESSAGE RECOVERED</span>
+            </div>
+
+            <label for="decryptedText">ORIGINAL MESSAGE</label>
+
+            <textarea id="decryptedText" readonly></textarea>
+
+            <button id="copyDecrypted" class="btn secondary full">
+                COPY RECOVERED MESSAGE
+            </button>
+
+        </div>
+
+    </section>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+</main>
+
+<footer>
+    © 2026 CYBERSHIELD | Secure Communication
+</footer>
+
+</body>
+</html>

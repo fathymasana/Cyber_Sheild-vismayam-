@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield | Encrypt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">CYBER<span>SHIELD</span></div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="encrypt.html">Encrypt</a>
+        <a href="decrypt.html">Decrypt</a>
+    </div>
+    <div class="status">● SYSTEM SECURE</div>
+</nav>
+
+<main class="workspace">
+
+    <div class="tag">MODULE 01 / MESSAGE PROTECTION</div>
+
+    <h1>Encryption <span>Terminal</span></h1>
+
+    <p class="subtitle">
+        Transform your message into protected digital information.
+    </p>
+
+    <div class="security-tag">AES-256-GCM ENCRYPTION</div>
+
+    <section class="panel">
+
+        <label for="plainText">ENTER YOUR MESSAGE</label>
+
+        <textarea id="plainText"
+            placeholder="Type your secret message here..."></textarea>
+
+        <button id="encryptBtn" class="btn primary full">
+            🔒 ENCRYPT MESSAGE
+        </button>
+
+        <p id="encryptError" class="error"></p>
+
+        <div id="encryptResult" class="result-area hidden">
+
+            <div class="success-heading">
+                <h2>ENCRYPTION SUCCESSFUL</h2>
+                <span>✓ MESSAGE PROTECTED</span>
+            </div>
+
+            <label for="encryptedText">ENCRYPTED MESSAGE</label>
+
+            <textarea id="encryptedText" readonly></textarea>
+
+            <button id="copyEncrypted" class="btn secondary full">
+                COPY ENCRYPTED MESSAGE
+            </button>
+
+            <label for="secretKey">SECRET KEY — KEEP IT SAFE</label>
+
+            <textarea id="secretKey" readonly></textarea>
+
+            <button id="copyKey" class="btn secondary full">
+                COPY SECRET KEY
+            </button>
+
+            <div class="notice">
+                Important: Save your secret key. You will need
+                it to recover your original message.
+            </div>
+
+            <a href="decrypt.html" class="btn primary full">
+                CONTINUE TO DECRYPTION →
+            </a>
+
+        </div>
+
+    </section>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+</main>
+
+<footer>
+    © 2026 CYBERSHIELD | Secure Communication
+</footer>
+
+</body>
+</html>
